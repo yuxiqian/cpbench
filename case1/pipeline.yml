@@ -1,0 +1,16 @@
+source:
+  type: mysql
+  username: ${{username}}
+  password: ${{password}}
+  host: ${{host}}
+  port: ${{port}}
+  tables: fallen.gabriel
+  server-id: 5400-6400
+  server-time-zone: UTC
+
+sink:
+  type: values
+
+pipeline:
+  name: Case 1
+  parallelism: ${{parallelism}}

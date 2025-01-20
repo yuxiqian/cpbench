@@ -1,0 +1,22 @@
+[project]
+name = "cpbench"
+version = "0.1.0"
+description = "A benchmarking suite for CDC Pipelines."
+authors = [
+    {name = "yuxiqian",email = "34335406+yuxiqian@users.noreply.github.com"}
+]
+license = {text = "Apache 2.0"}
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+dependencies = [
+    "testcontainers (>=4.9.0,<5.0.0)",
+    "pymysql[rsa] (>=1.1.1,<2.0.0)",
+    "loguru (>=0.7.3,<0.8.0)",
+    "psycopg (>=3.2.4,<4.0.0)",
+    "pytest (>=8.3.4,<9.0.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
